@@ -1,7 +1,10 @@
 <FirstScreen>:
     name: 'first'
-    MDLabel:
-        text: 'First Screen'
-    MDRectangleFlatButton:
-        text: 'Go to Second Screen'
-        on_release: root.switch_to_second_screen()
+    BoxLayout:  # Example, you can change this to another layout if needed
+        orientation: 'vertical'
+        MDLabel:
+            text: 'First Screen'
+        MDButton:
+            color:'black'
+            text: 'Go to Second Screen'
+            on_release: root.switch_to_second_screen()

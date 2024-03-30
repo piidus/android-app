@@ -1,8 +1,32 @@
-# MDApp:
-
-#     title: "My KivyMD App"
-ScreenManager:
+WindowManager:
+    LoginScreen:
     FirstScreen:
     SecondScreen:
+    
+
+<LoginScreen>:
+    
+    MDScreen:
+        md_bg_color: self.theme_cls.backgroundColor
+
+        MDButton:
+            style: "elevated"
+            pos_hint: {"center_x": .5, "center_y": .5}
+            on_release: root.go_to_first()
+
+            MDButtonIcon:
+                icon: "plus"
+
+            MDButtonText:
+                text: "Button"
+
+        MDLabel:
+            text: "MDLabel"
+            halign: "center"
+            pos_hint: {"center_x": .5, "center_y": .6}
+            
+  
+    
+            
 
 
