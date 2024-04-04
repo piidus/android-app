@@ -39,7 +39,11 @@ class MYProject(MDApp):
         """
 
         import View.screens
+        self.theme_cls = ThemeManager()
+        self.theme_cls.theme_style_switch_animation = True
         
+        self.theme_cls.primary_palette = "Darkgrey"
+        self.theme_cls.theme_style = "Light"
 
         self.manager_screens = MDScreenManager()
         
